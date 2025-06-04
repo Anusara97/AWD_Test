@@ -15,9 +15,18 @@ public class Stack {
         return top == stk.length - 1;
     }
 
+    public void push(int item) {
+        if (isFull()) {
+            System.out.println("Stack is overflow");
+        } else {
+            stk[++top] = item;
+        }
+    }
+
     public int pop() {
         if (isEmpty()) {
             System.out.println("Stack is underflow.");
+            return 0;
         } else {
             int ele = stk[top--];
             return ele;
