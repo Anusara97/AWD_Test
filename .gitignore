@@ -1,0 +1,9 @@
+#Ignore F1.txt files
+F1.txt
+
+#Ignore all .pdf files
+*.pdf
+
+#Ignore all content in the bin folder
+bin/
+lib/
