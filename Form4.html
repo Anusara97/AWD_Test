@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form2</title>
+</head>
+<body>
+    <h2>Questionnaire</h2>
+
+    <p>Please fill out this questionnaire</p>
+
+    <form action="">        
+        <fieldset>
+            <legend>Personal Data</legend>
+            <table>
+                <tr>
+                    <td>First name:</td>
+                    <td>
+                        <input type="text" name="fname" size="15" maxlength="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>City:</td>
+                    <td>
+                        <input type="text" name="city" value="Matara" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Address:</td>
+                    <td>
+                        <textarea name="Address" rows="4" cols="20" id=""></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Birthdate:</td>
+                    <td>
+                        <input type="date" name="bday">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male">
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" value="Female">
+                        <label for="gender">Female</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>School Data</legend>
+            <table>
+                <tr>
+                    <td>A-Level Student:</td>
+                    <td>
+                        <input type="checkbox" name="AL" checked>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>O-Level Student:</td>
+                    <td>
+                        <input type="checkbox" name="OL">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>School of Study:</td>
+                    <td>
+                        <select name="School" id="">
+                            <option value="SV">Rahula College</option>
+                            <option value="SV" selected>Sujatha Vidyalaya</option>
+                            <option value="SV">Royal College</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
